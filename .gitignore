@@ -1,0 +1,11 @@
+build/
+dist/
+artifacts/
+.venv/
+__pycache__/
+.pytest_cache/
+docs/evidence/
+private_keys/
+original_data/
+safe_for_codex/
+restored_outputs/

@@ -1,0 +1,85 @@
+{
+  "evidence_date": "2026-10-31",
+  "remediation": "Removed unused CSV recovery reader and fallback; encrypted V1 protocol unchanged",
+  "macos": {
+    "core_passed": 305,
+    "gui_passed": 144,
+    "gui_skipped": 0,
+    "frozen_acceptance": {
+      "platform": "Darwin",
+      "machine": "arm64",
+      "python": "3.12.15",
+      "native_frozen_app": true,
+      "integrity": true,
+      "fresh_process_recovery": true,
+      "chinese_paths": true,
+      "protected_sentinel_scan": true,
+      "exact_protected_roundtrip": true,
+      "ai_formula_preserved": true,
+      "chart_preserved": true,
+      "hidden_sheet_preserved": true,
+      "recalculation_requested": true,
+      "excel_2016_recalculation_executed": false,
+      "total_protected_cells": 1265,
+      "restored_cells": 1265,
+      "foreign_run_blocked": true,
+      "native_tk": {
+        "native_tk_initialized": true,
+        "tcl_version": "9.1.0",
+        "tk_version": "9.1.0",
+        "windowing_system": "aqua"
+      }
+    },
+    "previous_v1_batch_fictional_compatibility": true,
+    "ad_hoc_signed": true,
+    "notarized": false,
+    "file": "Excel-Privacy-1.0.0-macos-arm64.zip",
+    "sha256": "7f954c00167237bb68cbc0824c9272b08732a148c5f36dbca075b2af90205a27",
+    "bytes": 15959512
+  },
+  "windows": {
+    "core_passed": 305,
+    "gui_passed": 141,
+    "gui_skipped": 3,
+    "frozen_acceptance": {
+      "platform": "Windows",
+      "machine": "AMD64",
+      "python": "3.12.10",
+      "native_frozen_app": true,
+      "integrity": true,
+      "fresh_process_recovery": true,
+      "chinese_paths": true,
+      "protected_sentinel_scan": true,
+      "exact_protected_roundtrip": true,
+      "ai_formula_preserved": true,
+      "chart_preserved": true,
+      "hidden_sheet_preserved": true,
+      "recalculation_requested": true,
+      "excel_2016_recalculation_executed": false,
+      "total_protected_cells": 1265,
+      "restored_cells": 1265,
+      "foreign_run_blocked": true,
+      "native_tk": {
+        "native_tk_initialized": true,
+        "tcl_version": "8.6.15",
+        "tk_version": "8.6.15",
+        "windowing_system": "win32"
+      }
+    },
+    "system_runtime": {
+      "os_version": "Microsoft Windows NT 10.0.26100.0",
+      "vc_runtime_version": "14.51.36247.0",
+      "microsoft_runtime_dlls_bundled": false,
+      "official_system_runtime_present": true
+    },
+    "signed": false,
+    "file": "Excel-Privacy-1.0.0-windows-x64.zip",
+    "sha256": "43d4549c42d4cfdea3c0759e6298f0e0e1c55f99e3a15a09e190bccb668a084a",
+    "bytes": 15985187
+  },
+  "historical_excel_2016_manual_acceptance": {
+    "completed": true,
+    "basis": "User report dated 2026-10-31 for previous accepted build; not a new manual test",
+    "full_retest_required_for_this_change": false
+  }
+}

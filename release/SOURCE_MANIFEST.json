@@ -1,0 +1,597 @@
+{
+  "baseline": "independent-v1.0.0-final-20261031",
+  "upstream_definition_matches": [],
+  "upstream_continuous_60_token_matches": [],
+  "source_files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "adbc62af47c5d9781615ada5b21c00c1c32291ebb56c9264b00f5bd3c842beb3"
+    },
+    {
+      "path": ".github/workflows/windows-native.yml",
+      "sha256": "37a8b8c5f57776993c042101cb8364d72563413fd4ecc3dd183da11a17771874"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "686a20533a3b5932b68101fcfb16bcffb41ac7f0441e53a1d8b133ac930e0071"
+    },
+    {
+      "path": "Excel Privacy Tool Windows.spec",
+      "sha256": "b428bd4afdf040c64babd2f1d2d07016e88a021632a480892fde08a8e5484cf6"
+    },
+    {
+      "path": "Excel Privacy Tool.spec",
+      "sha256": "232d603654994ae9569172089a7dfefac2b81d5bada625914378c53b2fec32d6"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "1ab4e64ca34963100c092b80031670f5b51ea14c182e21db87abd172b9120e62"
+    },
+    {
+      "path": "README.md",
+      "sha256": "8231ae2d71ce7a4b99445ff12a2fe0afba2a7324c2458f7f4327e6aca086e975"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "1fa3de21140549a940b3813409695b8d58422067f777b56c98ba254ff232cf84"
+    },
+    {
+      "path": "docs/V1_RELEASE_CONTRACT.md",
+      "sha256": "f27eeff3413d00c31d1327cdb5b21b535e57ec0bcd450deb581195023728d569"
+    },
+    {
+      "path": "privacy_app.py",
+      "sha256": "b6fe79b4bcb8a08a72e845b550dc1e3c4c7e69d24eab2343891139a007e0c568"
+    },
+    {
+      "path": "privacy_handler/README.md",
+      "sha256": "c4082f5d17e5e4569b7dc2d6b7b13a800648503e63efd191848b42337c7acb54"
+    },
+    {
+      "path": "privacy_handler/approved_checksums.json",
+      "sha256": "2e32ccadad76c4d9a6563bf0a32eafca5cbc72c86a0992b5b77f07b10c9b5676"
+    },
+    {
+      "path": "privacy_handler/conflict_engine.py",
+      "sha256": "55a4c4869fa8dd2ed38d5282de89e1c66d55e0ffe48a975d02bbbcf745aabdc5"
+    },
+    {
+      "path": "privacy_handler/excel_privacy_tool.py",
+      "sha256": "797ac33e364b072dda8a08f42ad2901bd55fc3cd1f9f0015d3a946d98258b1fd"
+    },
+    {
+      "path": "privacy_handler/gui_controller.py",
+      "sha256": "1aa2d1e0a29c1b242ed5f0f08ac8d8ed005679ddc2903db0ec44a3d935d92032"
+    },
+    {
+      "path": "privacy_handler/identity.py",
+      "sha256": "15b2fa91cddd80e15c0b6128d3f6473351bd17a2f3ad5e3a9458ee2efd1bd16c"
+    },
+    {
+      "path": "privacy_handler/key_detector.py",
+      "sha256": "2596bae9ee4551b8584548aa5679df2d9045f7708c992c53b5c4fcfd5d52dc22"
+    },
+    {
+      "path": "privacy_handler/numeric_masking.py",
+      "sha256": "ba2b21be6ccc4a5b1b535c9c6ccc7efc3acca366991685dc819465f80ee21cee"
+    },
+    {
+      "path": "privacy_handler/packaging_smoke.py",
+      "sha256": "72c638067607d5d33638a824751fc0f5c4bd3be87a0e252bf198120591fa70e0"
+    },
+    {
+      "path": "privacy_handler/prompt_generator.py",
+      "sha256": "0f78167bb633cd745713b28eedde440a4f0f310e96ac4420815b48f3606516c3"
+    },
+    {
+      "path": "privacy_handler/recovery_ledger.py",
+      "sha256": "5636d7401fd434d513521cb1d45867e0af6d22949aa3d2edcb7e74ad249f2519"
+    },
+    {
+      "path": "privacy_handler/restore_engine.py",
+      "sha256": "1ec1e7e5bfc4ec8dac94cedf0dcef4777c13d7c45db5dfb404743c7db489c5ac"
+    },
+    {
+      "path": "privacy_handler/table_scope.py",
+      "sha256": "9302e16464e30197d0aad992cd699f7e4e1d06ec037388da4419263056087c2b"
+    },
+    {
+      "path": "pytest.ini",
+      "sha256": "68e85757cbd98fbd55ffce0de190a6513a597a44874988ed985312ea31829936"
+    },
+    {
+      "path": "release/ACCEPTANCE.md",
+      "sha256": "17d75d4b31548b713741b1baa29e304af9f16f44726409c96635fe2d034ab0a1"
+    },
+    {
+      "path": "release/CHANGELOG.md",
+      "sha256": "8c694a90f5775225cf30004b8d17812c837c9d5cc5ed963792459bde525ae133"
+    },
+    {
+      "path": "release/EXCEL_2016_ACCEPTANCE.md",
+      "sha256": "38dafffa32231af95a2d7f2cf13b3b0f71ec9823388f468383c7e39ccf0b4d58"
+    },
+    {
+      "path": "release/RELEASE_BODY_DRAFT.md",
+      "sha256": "198917d9ef9a117db084f8c31b046fd36502845e7f2f8689c60b390173f1030a"
+    },
+    {
+      "path": "release/SOURCE_PROVENANCE.md",
+      "sha256": "651139c0896c8a3fb95feb4fa70cb3e2cd087abe4f9678f50b3c1ed0c77ebecd"
+    },
+    {
+      "path": "release/evidence/NATIVE_ACCEPTANCE.json",
+      "sha256": "0dd06aecb797af1383022836f9faf4a577bbc41a2efc676603ed0403a0571638"
+    },
+    {
+      "path": "release/licenses/Python-3.12.10-third-party-licenses.rst",
+      "sha256": "341832873fd316a37927e79385093fbbfd40a467428480835fe435a80cadf4e5"
+    },
+    {
+      "path": "release/licenses/Python-LICENSE.txt",
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    {
+      "path": "release/licenses/Tcl-Tk-license.terms",
+      "sha256": "c0a69a2bfd757361ec7e6143973b103c90409316b49e9c88db26ad6388e79f16"
+    },
+    {
+      "path": "release/licenses/altgraph/LICENSE",
+      "sha256": "6c194d6db0c64d45535d10c95142b9b0cda7b7dcc7f1ddee302b3d536f3dbe46"
+    },
+    {
+      "path": "release/licenses/cffi/LICENSE",
+      "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
+    },
+    {
+      "path": "release/licenses/cryptography/LICENSE",
+      "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb"
+    },
+    {
+      "path": "release/licenses/cryptography/LICENSE.APACHE",
+      "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe"
+    },
+    {
+      "path": "release/licenses/cryptography/LICENSE.BSD",
+      "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb"
+    },
+    {
+      "path": "release/licenses/cryptography/cryptography-rust.cyclonedx.json",
+      "sha256": "3e83e46564396b435608932504bdf782a7156b841c3b98c16c98c5c82ce6dc90"
+    },
+    {
+      "path": "release/licenses/cryptography/sbom.json",
+      "sha256": "eae61c5ad3197e6c0a30adb3eeab20fa085f1068607667b1137fccf458fe7958"
+    },
+    {
+      "path": "release/licenses/et-xmlfile/LICENCE.python",
+      "sha256": "4ccdaaebc0f44b83720ec0399bb7ab329adce067dd62f73c5535a2dc05628ab2"
+    },
+    {
+      "path": "release/licenses/et-xmlfile/LICENCE.rst",
+      "sha256": "0c84bb42f5d367e5ebf9fc2dde35b16141df5ee0fdc189250858bc6c5560f69e"
+    },
+    {
+      "path": "release/licenses/inventory.json",
+      "sha256": "34411fd4215a1bc0c5dba754710cd832efac9730717bc7dba127897c31c7255a"
+    },
+    {
+      "path": "release/licenses/libffi-LICENSE",
+      "sha256": "67894089811f93fca47a76f85e017da6f8582d4ba0905963c6e0f1ad6df7a195"
+    },
+    {
+      "path": "release/licenses/mac-libtommath/LICENSE",
+      "sha256": "2fa64b163659f41965c9815882a8296d3d03ff546b76153e11445f9bdecf955a"
+    },
+    {
+      "path": "release/licenses/mac-mpdecimal/COPYRIGHT.txt",
+      "sha256": "dba079e24a0286052f9f36a5e0b4f6cc95bc83ada657eb26bef8c0b6473f6512"
+    },
+    {
+      "path": "release/licenses/mac-openssl-3/LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "release/licenses/mac-shared-libraries.json",
+      "sha256": "d87e481f60dd77a3dcef7c0376dcd541bca6b22d3c295123e3488d5a530ffd4c"
+    },
+    {
+      "path": "release/licenses/mac-xz/COPYING",
+      "sha256": "616a3ad264ce29b8f1cb97e53037b139d406899ca8d1f799651e17bfa09830b8"
+    },
+    {
+      "path": "release/licenses/mac-xz/COPYING.0BSD",
+      "sha256": "0b01625d853911cd0e2e088dcfb743261034a091bb379246cb25a14cc4c74bf1"
+    },
+    {
+      "path": "release/licenses/mac-xz/COPYING.GPLv2",
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+    },
+    {
+      "path": "release/licenses/mac-xz/COPYING.GPLv3",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "release/licenses/mac-xz/COPYING.LGPLv2.1",
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+    },
+    {
+      "path": "release/licenses/macholib/LICENSE",
+      "sha256": "47082ab2bc0184123ec9f10fdf80c70723ee68f07d44382e17615c2a6ba70b09"
+    },
+    {
+      "path": "release/licenses/openpyxl/LICENCE.rst",
+      "sha256": "0c84bb42f5d367e5ebf9fc2dde35b16141df5ee0fdc189250858bc6c5560f69e"
+    },
+    {
+      "path": "release/licenses/openssl/LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "release/licenses/packaging/LICENSE",
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    {
+      "path": "release/licenses/packaging/LICENSE.APACHE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "release/licenses/packaging/LICENSE.BSD",
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    {
+      "path": "release/licenses/pefile/LICENSE",
+      "sha256": "b44409c067c6da52bfb54bb6624fb11a7b52157c3a13ae1400232f8196e86ad3"
+    },
+    {
+      "path": "release/licenses/pycparser/LICENSE",
+      "sha256": "0c846399369ea76ddd7b5c44fe6d16497415fcf015f5cbb508c24bf98b81c5b1"
+    },
+    {
+      "path": "release/licenses/pyinstaller-hooks-contrib/LICENSE",
+      "sha256": "91d0baaff00773038e72c0a1fc9d5d2d38706b7a2b9c04f34296608f931b9cd0"
+    },
+    {
+      "path": "release/licenses/pyinstaller/COPYING.txt",
+      "sha256": "0598064c7d2718e38d7914a7d08343b2fa008e3bea9ebba2aa7a6ffa5900dd64"
+    },
+    {
+      "path": "release/licenses/pywin32-ctypes/LICENSE.txt",
+      "sha256": "cc03ae891a362c85d508a4e47af954314a2e4ccbd445140cb8dca7e2baee19f7"
+    },
+    {
+      "path": "release/licenses/rust/asn1-0.24.1/LICENSE",
+      "sha256": "c6deb2d156619439e147f8b62e1b3928598c8e3652ec8b56cc039490696b3985"
+    },
+    {
+      "path": "release/licenses/rust/asn1_derive-0.24.1/LICENSE",
+      "sha256": "c6deb2d156619439e147f8b62e1b3928598c8e3652ec8b56cc039490696b3985"
+    },
+    {
+      "path": "release/licenses/rust/base64-0.23.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": "release/licenses/rust/base64-0.23.0/LICENSE-MIT",
+      "sha256": "ab499c75a0f0da8e0fe83bf9ba3a27e5c39705310f07107c6c66b69958d2401c"
+    },
+    {
+      "path": "release/licenses/rust/bitflags-2.13.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": "release/licenses/rust/bitflags-2.13.1/LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+    },
+    {
+      "path": "release/licenses/rust/cc-1.4.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": "release/licenses/rust/cc-1.4.0/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "path": "release/licenses/rust/cfg-if-1.0.4/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": "release/licenses/rust/cfg-if-1.0.4/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "path": "release/licenses/rust/find-msvc-tools-0.1.9/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": "release/licenses/rust/find-msvc-tools-0.1.9/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "path": "release/licenses/rust/foreign-types-0.3.2/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "path": "release/licenses/rust/foreign-types-0.3.2/LICENSE-MIT",
+      "sha256": "333ea3aaa3cadb819f4acd9f9153f9feee060a995ca8710f32bc5bd9a4b91734"
+    },
+    {
+      "path": "release/licenses/rust/foreign-types-shared-0.1.1/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "path": "release/licenses/rust/foreign-types-shared-0.1.1/LICENSE-MIT",
+      "sha256": "333ea3aaa3cadb819f4acd9f9153f9feee060a995ca8710f32bc5bd9a4b91734"
+    },
+    {
+      "path": "release/licenses/rust/heck-0.5.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": "release/licenses/rust/heck-0.5.0/LICENSE-MIT",
+      "sha256": "7b63ecd5f1902af1b63729947373683c32745c16a10e8e6292e2e2dcd7e90ae0"
+    },
+    {
+      "path": "release/licenses/rust/itoa-1.0.18/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "path": "release/licenses/rust/itoa-1.0.18/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "path": "release/licenses/rust/libc-0.2.189/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "path": "release/licenses/rust/libc-0.2.189/LICENSE-MIT",
+      "sha256": "123a331b5dbf04c30097fa43b8f858bc85df671fe776de498d01f3d6b7c1f69e"
+    },
+    {
+      "path": "release/licenses/rust/once_cell-1.21.4/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": "release/licenses/rust/once_cell-1.21.4/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "path": "release/licenses/rust/openssl-0.10.81/LICENSE",
+      "sha256": "f3d4287b4a21c5176fea2f9bd4ae800696004e2fb8e05cbc818be513f188a941"
+    },
+    {
+      "path": "release/licenses/rust/openssl-0.10.81/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "path": "release/licenses/rust/openssl-macros-0.1.1/LICENSE-APACHE",
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "path": "release/licenses/rust/openssl-macros-0.1.1/LICENSE-MIT",
+      "sha256": "ea5ab440900ab271811d5c2dc02a9de6e03a6956ac5727e85c11d76df5883d30"
+    },
+    {
+      "path": "release/licenses/rust/openssl-sys-0.9.117/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "path": "release/licenses/rust/pem-4.0.0/LICENSE.md",
+      "sha256": "b7c76ff4466a3aeb6a7d903e81b651335e97d64ecb857e2ee9812a36c6fd1acf"
+    },
+    {
+      "path": "release/licenses/rust/pkg-config-0.3.33/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": "release/licenses/rust/pkg-config-0.3.33/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "path": "release/licenses/rust/portable-atomic-1.14.0/LICENSE-APACHE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "release/licenses/rust/portable-atomic-1.14.0/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "path": "release/licenses/rust/proc-macro2-1.0.107/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "path": "release/licenses/rust/proc-macro2-1.0.107/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "path": "release/licenses/rust/pyo3-0.29.2/LICENSE-APACHE",
+      "sha256": "32c76dbe0e73d79100d5ece77c158399f2e2541bc5c78548a4ba45c1cb53c5c9"
+    },
+    {
+      "path": "release/licenses/rust/pyo3-0.29.2/LICENSE-MIT",
+      "sha256": "afcbe3b2e6b37172b5a9ca869ee4c0b8cdc09316e5d4384864154482c33e5af6"
+    },
+    {
+      "path": "release/licenses/rust/pyo3-build-config-0.29.2/LICENSE-APACHE",
+      "sha256": "32c76dbe0e73d79100d5ece77c158399f2e2541bc5c78548a4ba45c1cb53c5c9"
+    },
+    {
+      "path": "release/licenses/rust/pyo3-build-config-0.29.2/LICENSE-MIT",
+      "sha256": "afcbe3b2e6b37172b5a9ca869ee4c0b8cdc09316e5d4384864154482c33e5af6"
+    },
+    {
+      "path": "release/licenses/rust/pyo3-ffi-0.29.2/LICENSE-APACHE",
+      "sha256": "32c76dbe0e73d79100d5ece77c158399f2e2541bc5c78548a4ba45c1cb53c5c9"
+    },
+    {
+      "path": "release/licenses/rust/pyo3-ffi-0.29.2/LICENSE-MIT",
+      "sha256": "afcbe3b2e6b37172b5a9ca869ee4c0b8cdc09316e5d4384864154482c33e5af6"
+    },
+    {
+      "path": "release/licenses/rust/pyo3-macros-0.29.2/LICENSE-APACHE",
+      "sha256": "32c76dbe0e73d79100d5ece77c158399f2e2541bc5c78548a4ba45c1cb53c5c9"
+    },
+    {
+      "path": "release/licenses/rust/pyo3-macros-0.29.2/LICENSE-MIT",
+      "sha256": "afcbe3b2e6b37172b5a9ca869ee4c0b8cdc09316e5d4384864154482c33e5af6"
+    },
+    {
+      "path": "release/licenses/rust/pyo3-macros-backend-0.29.2/LICENSE-APACHE",
+      "sha256": "32c76dbe0e73d79100d5ece77c158399f2e2541bc5c78548a4ba45c1cb53c5c9"
+    },
+    {
+      "path": "release/licenses/rust/pyo3-macros-backend-0.29.2/LICENSE-MIT",
+      "sha256": "afcbe3b2e6b37172b5a9ca869ee4c0b8cdc09316e5d4384864154482c33e5af6"
+    },
+    {
+      "path": "release/licenses/rust/quote-1.0.47/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "path": "release/licenses/rust/quote-1.0.47/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "path": "release/licenses/rust/self_cell-1.3.0/LICENSE-APACHE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "release/licenses/rust/self_cell-1.3.0/LICENSE-GPLv2",
+      "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505"
+    },
+    {
+      "path": "release/licenses/rust/shlex-2.0.1/LICENSE-APACHE",
+      "sha256": "553fffcd9b1cb158bc3e9edc35da85ca5c3b3d7d2e61c883ebcfa8a65814b583"
+    },
+    {
+      "path": "release/licenses/rust/shlex-2.0.1/LICENSE-MIT",
+      "sha256": "4455bf75a91154108304cb283e0fea9948c14f13e20d60887cf2552449dea3b1"
+    },
+    {
+      "path": "release/licenses/rust/syn-2.0.119/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "path": "release/licenses/rust/syn-2.0.119/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "path": "release/licenses/rust/target-lexicon-0.13.5/LICENSE",
+      "sha256": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5"
+    },
+    {
+      "path": "release/licenses/rust/unicode-ident-1.0.24/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "path": "release/licenses/rust/unicode-ident-1.0.24/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "path": "release/licenses/rust/unicode-ident-1.0.24/LICENSE-UNICODE",
+      "sha256": "f7db81051789b729fea528a63ec4c938fdcb93d9d61d97dc8cc2e9df6d47f2a1"
+    },
+    {
+      "path": "release/licenses/rust/vcpkg-0.2.15/LICENSE-APACHE",
+      "sha256": "3708458dee7f359ac6c9c5558023ed481be87e5372c43ebd7f2ca7ad23c12026"
+    },
+    {
+      "path": "release/licenses/rust/vcpkg-0.2.15/LICENSE-MIT",
+      "sha256": "ff7d99434986ba68f6575d689fd9cc11d93a486876b19004e1bacc0f6ca554d4"
+    },
+    {
+      "path": "release/licenses/windows-inventory.json",
+      "sha256": "ebb9ae12527b8005e3bfc25e4586176875b34a40a52479bab2f5b038d9df2d25"
+    },
+    {
+      "path": "release/licenses/windows-openssl-3.0.16/LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "release/licenses/windows-zlib-1.3.1/LICENSE",
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+    },
+    {
+      "path": "requirements-build.txt",
+      "sha256": "21eaa0ee1e7642cfb9e34dc7c016be0f6cb61ce6b85c013380778aa4aea20c00"
+    },
+    {
+      "path": "requirements-test.txt",
+      "sha256": "93c4ab5f175d24229e46ec70a8ecaeb6db8b36e3f54d8005808044c060acbc92"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "cbec416dd44d01063d333169b9f57c3f3db820bfefd6c0faffebf3db6bc5b424"
+    },
+    {
+      "path": "tests/test_conflict_engine.py",
+      "sha256": "4e62e12e40339499a92fb8559e1285246e1dc27f77c25bcf952228f67c4b22a1"
+    },
+    {
+      "path": "tests/test_gui_workflow.py",
+      "sha256": "2f86ea6ad04d3030484217a923b6168dcdd241e236e37a2db89be7f2f657490a"
+    },
+    {
+      "path": "tests/test_identity.py",
+      "sha256": "33a62368141e5c64f5cfe56be576da67759ab0bf3e3e0c514f4e36fe69dac5bf"
+    },
+    {
+      "path": "tests/test_key_detector.py",
+      "sha256": "1425a4661b571ecad1ebda8c6754823c375e92b8fa17502a67024b51644a3798"
+    },
+    {
+      "path": "tests/test_ledger_schema.py",
+      "sha256": "00a82d42bfcd9ee61ce9d3889fa9ffb4b21997888fbde190a595e44862c47249"
+    },
+    {
+      "path": "tests/test_numeric_masking.py",
+      "sha256": "478a3a545839bf558389c5de83a1352d07349601d5b30608f09adb1f3011f658"
+    },
+    {
+      "path": "tests/test_preflight.py",
+      "sha256": "87d145e04a879550003ef3155dfba50fbaba04f813c306251316ef7650e9cdb8"
+    },
+    {
+      "path": "tests/test_prompt_generator.py",
+      "sha256": "893d7c7704e5b288a768658fcd7013a08aca8be5549f68545f0818319bce4d58"
+    },
+    {
+      "path": "tests/test_record_identity_snapshot.py",
+      "sha256": "1462c03d7c03ec072255e9e862fb35d19f249d6c333b3db89e6395cc72a1d70f"
+    },
+    {
+      "path": "tests/test_roundtrip_restore.py",
+      "sha256": "d1559ee459683923a76606c4c2c65c86ab3c88667de9b32ff25ac9d06cc920d3"
+    },
+    {
+      "path": "tests/test_table_scope.py",
+      "sha256": "8bc76881c57f7899fbe93e6482a7283e47b04d17ffeee4547a296b01f7986c31"
+    },
+    {
+      "path": "tests/test_windows_packaging.py",
+      "sha256": "b311728aaaee8da04db49fb7917a3922632965eb889b06c753c6e6dfc4ed81f7"
+    },
+    {
+      "path": "tools/collect_licenses.py",
+      "sha256": "f7e227cd1d29492438455e69d064e08df00d7d552e700c0d9a586dea721a9ca3"
+    },
+    {
+      "path": "tools/refresh_integrity.py",
+      "sha256": "95efb3aef3b45f4a846ebe6cfd246c627e5de601ba2df2d2297a894f96a89c69"
+    },
+    {
+      "path": "tools/release_smoke.py",
+      "sha256": "144b0e8a5ead162c5eed426184776e232e56b0535948d89840f0360be89cded3"
+    },
+    {
+      "path": "tools/run_release_tests.py",
+      "sha256": "646dfd0560337b520ab1369d4e8ccae385794416fe6ae5fd236147a7e2047240"
+    },
+    {
+      "path": "tools/stage_release.py",
+      "sha256": "8a4d04d44f6bf8e18e9aa02dd76c4ef4e69e817547867a03becd400058dde171"
+    }
+  ],
+  "license": "MIT for independent contributions; third-party notices separate",
+  "public_release_approved": false
+}

@@ -1,0 +1,15 @@
+{
+  "privacy_app.py": "b6fe79b4bcb8a08a72e845b550dc1e3c4c7e69d24eab2343891139a007e0c568",
+  "privacy_handler/excel_privacy_tool.py": "797ac33e364b072dda8a08f42ad2901bd55fc3cd1f9f0015d3a946d98258b1fd",
+  "privacy_handler/identity.py": "15b2fa91cddd80e15c0b6128d3f6473351bd17a2f3ad5e3a9458ee2efd1bd16c",
+  "privacy_handler/key_detector.py": "2596bae9ee4551b8584548aa5679df2d9045f7708c992c53b5c4fcfd5d52dc22",
+  "privacy_handler/numeric_masking.py": "ba2b21be6ccc4a5b1b535c9c6ccc7efc3acca366991685dc819465f80ee21cee",
+  "privacy_handler/conflict_engine.py": "55a4c4869fa8dd2ed38d5282de89e1c66d55e0ffe48a975d02bbbcf745aabdc5",
+  "privacy_handler/restore_engine.py": "1ec1e7e5bfc4ec8dac94cedf0dcef4777c13d7c45db5dfb404743c7db489c5ac",
+  "privacy_handler/prompt_generator.py": "0f78167bb633cd745713b28eedde440a4f0f310e96ac4420815b48f3606516c3",
+  "privacy_handler/table_scope.py": "9302e16464e30197d0aad992cd699f7e4e1d06ec037388da4419263056087c2b",
+  "privacy_handler/recovery_ledger.py": "5636d7401fd434d513521cb1d45867e0af6d22949aa3d2edcb7e74ad249f2519",
+  "privacy_handler/gui_controller.py": "1aa2d1e0a29c1b242ed5f0f08ac8d8ed005679ddc2903db0ec44a3d935d92032",
+  "privacy_handler/packaging_smoke.py": "72c638067607d5d33638a824751fc0f5c4bd3be87a0e252bf198120591fa70e0",
+  "privacy_handler/README.md": "c4082f5d17e5e4569b7dc2d6b7b13a800648503e63efd191848b42337c7acb54"
+}
