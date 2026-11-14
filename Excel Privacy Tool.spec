@@ -79,8 +79,8 @@ coll = COLLECT(
 app = BUNDLE(
     coll,
     name='Excel Privacy Tool.app',
-    version='1.0.0',
-    info_plist={'CFBundleShortVersionString': '1.0.0', 'CFBundleVersion': '1.0.0', 'LSMinimumSystemVersion': '11.0', 'NSHumanReadableCopyright': 'Copyright (c) 2026 LunaBella'},
-    icon=None,
+    version='1.0.1',
+    info_plist={'CFBundleShortVersionString': '1.0.1', 'CFBundleVersion': '1.0.1', 'LSMinimumSystemVersion': '11.0', 'NSHumanReadableCopyright': 'Copyright (c) 2026 LunaBella'},
+    icon=str(PROJECT_ROOT / "assets" / "brand" / "icons" / "mac" / "ExcelPrivacy.icns"),
     bundle_identifier="io.lunabella.excelprivacy",
 )

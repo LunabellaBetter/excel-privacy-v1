@@ -5,7 +5,7 @@
 本地 Excel 字段保护与 AI 编辑后安全恢复工具。Python/Tkinter 界面，支持
 macOS Apple Silicon 和 Windows x64。
 
-**版本：V1.0.0。** 已完成双平台原生自动化，以及用户报告的 Windows Excel 2016 完整流程、公式重算、整机重启恢复与冲突验收。验证范围和限制见 `release/ACCEPTANCE.md`；正式下载以 GitHub Release 为准。
+**版本：V1.0.1。** 在 V1.0.0 基础上新增 LunaBella 原创品牌图标（macOS 应用图标与 Windows 可执行文件图标），版本号同步升至 1.0.1；已完成双平台原生自动化，以及用户报告的 Windows Excel 2016 完整流程、公式重算、整机重启恢复与冲突验收。验证范围和限制见 `release/ACCEPTANCE.md`；正式下载以 GitHub Release 为准。
 
 仅支持未加密的 `.xlsx`。V1 禁止 `.xlsm`、VBA（含改名为 xlsx）、旧版 xls、
 透视表／缓存、切片器、外部连接／链接、custom XML、嵌入对象与 ActiveX。
@@ -57,6 +57,11 @@ python privacy_app.py
   在新版本重新脱敏。不得混用不同批次恢复资料。
 - 平台构建与真实 Excel 2016 兼容性验收分别记录，见 release/ACCEPTANCE.md。
 - TXT、Markdown、DOCX、PDF、OCR 不属于 V1。
+
+## 品牌图标（V1.0.1 新增）
+
+应用的 macOS 应用图标（ICNS）与 Windows 可执行文件图标（ICO）为 **LunaBella 原创品牌资产**，由已确认的 Master 原图（1254×1254）等比重缩放与格式转换派生（PNG / ICNS / ICO），不改变设计、比例、颜色或图形排列。
+品牌资产**不自动适用**软件 MIT 许可（MIT 仅覆盖 `release/SOURCE_MANIFEST.json` 所列独立贡献源码）；权属与使用限制见 `BRAND_ASSETS.md` 与 `assets/brand/README.md`（**草案，待 Una 确认**，不作为正式法律声明）。
 
 ## 来源与许可
 

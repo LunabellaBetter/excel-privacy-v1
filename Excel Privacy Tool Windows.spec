@@ -39,6 +39,7 @@ datas.append((str(PROJECT_ROOT / "README.md"), "."))
 datas.append((str(PROJECT_ROOT / "LICENSE"), "."))
 datas.append((str(PROJECT_ROOT / "THIRD_PARTY_NOTICES.md"), "."))
 datas.append((str(PROJECT_ROOT / "release" / "licenses"), "licenses"))
+datas.append((str(PROJECT_ROOT / "assets" / "brand" / "icons" / "win" / "ExcelPrivacy.ico"), "assets/brand/icons/win"))
 
 
 a = Analysis(
@@ -70,6 +71,8 @@ exe = EXE(
     [],
     exclude_binaries=True,
     name="Excel Privacy Tool",
+    icon=str(PROJECT_ROOT / "assets" / "brand" / "icons" / "win" / "ExcelPrivacy.ico"),
+    version=str(PROJECT_ROOT / "release" / "version_info_windows.txt"),
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -85,4 +88,6 @@ coll = COLLECT(
     strip=False,
     upx=False,
     name="Excel Privacy Tool",
+    icon=str(PROJECT_ROOT / "assets" / "brand" / "icons" / "win" / "ExcelPrivacy.ico"),
+    version=str(PROJECT_ROOT / "release" / "version_info_windows.txt"),
 )
