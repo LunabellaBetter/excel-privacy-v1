@@ -1,6 +1,8 @@
 # Windows Excel 2016 人工验收回执
 
-状态：人工验收清单。GitHub Actions 不包含 Excel 2016，不能代替本验收。
+状态：人工验收清单。> **V1.0.1 自动化补充**：Windows 构建在 GitHub Actions（windows-latest）额外通过 Gate B′ 自动化校验与冻结验收——中文路径启动、受保护单元格 1265/1265 精确往返、AI 公式/图表/隐藏表保留、外来源运行被拦截、原生 Tk win32、未打包任何 Microsoft DLL；自动化结果不替代下列人工验收清单。
+
+GitHub Actions 不包含 Excel 2016，不能代替本验收。
 仅使用 tools/release_smoke.py 生成的纯虚构数据，不使用公司或员工真实资料。
 
 请记录：验收日期、Windows 版本、Excel 产品版本及位数、ZIP 文件 SHA-256。

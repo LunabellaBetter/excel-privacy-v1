@@ -27,6 +27,12 @@ jobs:
         run: python tools/collect_licenses.py
       - name: Native x64 build
         run: python -m PyInstaller --noconfirm --clean "Excel Privacy Tool Windows.spec"
+      - name: Verify Windows build icon, PE resource, and version (Gate B′)
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force artifacts | Out-Null
+          python tools/verify_windows_build.py --exe "dist/Excel Privacy Tool/Excel Privacy Tool.exe" --ico "assets/brand/icons/win/ExcelPrivacy.ico" --out artifacts/windows-build-verify.json
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Verify system runtime prerequisite and excluded Microsoft binaries
         shell: pwsh
         run: |
@@ -47,9 +53,9 @@ jobs:
           Copy-Item README.md "dist/Excel Privacy Tool/README.md"
           Copy-Item release/EXCEL_2016_ACCEPTANCE.md "dist/Excel Privacy Tool/EXCEL_2016_ACCEPTANCE.md"
           Copy-Item "$env:RUNNER_TEMP/中文验收/Excel Privacy/原始合成资料/复杂 HR 验收.xlsx" "dist/Excel Privacy Tool/SYNTHETIC_HR.xlsx"
-          Compress-Archive -Path "dist/Excel Privacy Tool" -DestinationPath artifacts/Excel-Privacy-1.0.0-windows-x64.zip
-          $hash = (Get-FileHash artifacts/Excel-Privacy-1.0.0-windows-x64.zip -Algorithm SHA256).Hash.ToLower()
-          "$hash  Excel-Privacy-1.0.0-windows-x64.zip" | Out-File artifacts/SHA256SUMS.txt -Encoding ascii
+          Compress-Archive -Path "dist/Excel Privacy Tool" -DestinationPath artifacts/Excel-Privacy-1.0.1-windows-x64.zip
+          $hash = (Get-FileHash artifacts/Excel-Privacy-1.0.1-windows-x64.zip -Algorithm SHA256).Hash.ToLower()
+          "$hash  Excel-Privacy-1.0.1-windows-x64.zip" | Out-File artifacts/SHA256SUMS.txt -Encoding ascii
           Copy-Item docs/evidence/windows-frozen.json artifacts/
           Copy-Item release/licenses/inventory.json artifacts/windows-dependencies.json
           Copy-Item docs/evidence/windows-system-runtime.json artifacts/
@@ -57,7 +63,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: windows-x64-candidate
+          name: windows-x64-v1.0.1-candidate
           path: |
             artifacts/
             docs/evidence/pytest-core.xml

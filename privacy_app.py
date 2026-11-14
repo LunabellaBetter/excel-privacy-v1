@@ -28,6 +28,18 @@ def open_folder(folder_path: Path | str) -> None:
         subprocess.run(["xdg-open", str(folder)], check=False)
 
 
+def _set_windows_aumid() -> None:
+    """Windows 平台在创建任何 UI 窗口前设置稳定的 AppUserModelID。"""
+    if sys.platform == "win32":
+        try:
+            import ctypes
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(
+                "io.lunabella.excelprivacy"
+            )
+        except Exception:
+            pass
+
+
 class RecordKeyDialog(tk.Toplevel):
     """Modal dialog to select and validate record identification columns for active sheet."""
 
@@ -380,6 +392,8 @@ class PrivacyApp(tk.Tk):
         self.minsize(1060, 760)
         self.resizable(True, True)
 
+        self._apply_windows_icon()
+
         self.controller = GUIWorkflowController()
 
         # UI reactive string vars
@@ -396,6 +410,33 @@ class PrivacyApp(tk.Tk):
         self.last_mask_batch_tag: str = "尚未脱敏"
 
         self._build_ui()
+
+    def _apply_windows_icon(self) -> None:
+        """在 Windows 环境下为根窗口及所有子弹窗设置品牌 Logo。"""
+        if sys.platform != "win32":
+            return
+        _set_windows_aumid()
+        try:
+            candidates: list[Path] = []
+            if hasattr(sys, "_MEIPASS"):
+                candidates.append(Path(sys._MEIPASS) / "assets" / "brand" / "icons" / "win" / "ExcelPrivacy.ico")
+            if getattr(sys, "executable", None):
+                exe_dir = Path(sys.executable).resolve().parent
+                candidates.append(exe_dir / "_internal" / "assets" / "brand" / "icons" / "win" / "ExcelPrivacy.ico")
+                candidates.append(exe_dir / "assets" / "brand" / "icons" / "win" / "ExcelPrivacy.ico")
+            candidates.append(Path(__file__).resolve().parent / "assets" / "brand" / "icons" / "win" / "ExcelPrivacy.ico")
+
+            for icon_path in candidates:
+                if icon_path.is_file():
+                    self.iconbitmap(default=str(icon_path.resolve()))
+                    return
+            # 备用方案：当 ICO 文件缺失或无法读取时，若为 PyInstaller 打包环境，则从经过验证的 EXE 自身提取图标
+            if getattr(sys, "frozen", False) and getattr(sys, "executable", None):
+                exe_path = Path(sys.executable).resolve()
+                if exe_path.is_file():
+                    self.iconbitmap(default=str(exe_path))
+        except Exception:
+            pass
 
     def _build_ui(self):
         # Top title bar
@@ -1806,6 +1847,7 @@ class PrivacyApp(tk.Tk):
 
 
 def main():
+    _set_windows_aumid()
     if sys.argv[1:2] == ["--internal-ui-smoke"] and len(sys.argv) == 3:
         from privacy_handler.packaging_smoke import run_ui_phase
 
